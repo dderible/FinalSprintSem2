@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {ShoppingCart} from 'phosphor-react';
-import './index.css';
+import '../index.css';
 
 export const Navbar = () => {
     return ( 
