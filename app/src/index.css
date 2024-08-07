@@ -2,7 +2,7 @@
 /* Navbar CSS */
 
 .navbar {
-  height: 80px;
+  height: 108px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -21,5 +21,24 @@
   text-decoration: none;
   color: cornflowerblue;
   margin-left: 20px;
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.title1 {
+  margin-right: 370px;
+}
+
+.title2 {
+  margin-bottom: 65px;
+  margin-right: 233px
+}
+
+.shopbox {
+  padding-top: 20px;
+  padding-right: 15px;
+  width: 118px;
+  height: 50px;
+  border: solid gray 2px;
+  border-radius: 10px;
+  background-color: gray;
 }
