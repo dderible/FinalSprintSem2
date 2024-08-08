@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { getProducts } from '../api.js';
+import { ShopContext } from '../cartcontext.jsx';
 
 function ProductList({
   
@@ -15,9 +16,10 @@ function ProductList({
       <div className='productlist'>
         <ul>
           {products.map((product) => ( <li key={product.id} className="productbox"> <img src={product.image} className="techimage" alt='item' /> <p>{product.name}</p> <br /> <p>{product.price}</p> <br />
-          <div className='cartbutton'>
-          <button type="submit">Add To Cart</button>
-          </div> </li>))}
+          <button className='cartbutton' onClick={() => addToCart(id)}>
+            Add To Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
+          </button>
+          </li>))}
         </ul>
       </div>
     )
