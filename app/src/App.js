@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/navbar';
 import { Productdetails } from './components/pages/shop/productdetails';
 import { Shoppingcart } from './components/pages/cart/shoppingcart';
-import { ProductList } from './components/productlist'
+import { productList } from './components/productlist'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Router>
       <Navbar />
         <Routes>
-          <Route path='/' element={<ProductList />} />
+          <Route path='/' element={<productList />} />
           <Route path='/shop' element={<Productdetails />} />
           <Route path="/cart" element={<Shoppingcart />} />
         </Routes>
