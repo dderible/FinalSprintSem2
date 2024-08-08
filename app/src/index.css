@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body {
+  background-color: white;
+}
+
 /* Navbar CSS */
 
 .navbar {
-  height: 108px;
+  height: 100px;
   width: 100%;
+  margin: auto;
   background-color: black;
   display: flex;
   justify-content: flex-end;
@@ -44,6 +50,7 @@
 }
 
 /* Product List CSS */
+
 .productlist {
   font-family: "Irish Grover", system-ui;
   color: black;
@@ -60,4 +67,5 @@
   gap: 20px;
   margin-top: 25px;
   margin-bottom: 25px;
+  cursor: pointer;
 }
