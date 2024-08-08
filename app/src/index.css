@@ -54,16 +54,16 @@ body {
 .productlist {
   font-family: "Irish Grover", system-ui;
   color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .productbox {
   border: solid gray 2px;
   background-color: gray;
   border-radius: 10px;
-  width: 100px;
-  display: flexbox;
+  width: 200px;
   margin-left: 575px;
-  flex-wrap: wrap;
   gap: 20px;
   margin-top: 25px;
   margin-bottom: 25px;

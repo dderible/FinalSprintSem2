@@ -13,11 +13,9 @@ function ProductList({
 
     return (
       <div className='productlist'>
-        <div className='productbox'>
         <ul>
-          {products.map((product) => ( <li key={product.id}> <img src={product.image} className="techimage" alt='item' /> <p>{product.name}</p> <br /> <p>{product.price}</p></li>))}
+          {products.map((product) => ( <li key={product.id} className="productbox"> <img src={product.image} className="techimage" alt='item' /> <p>{product.name}</p> <br /> <p>{product.price}</p></li>))}
         </ul>
-        </div>
       </div>
     )
 }
