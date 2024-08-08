@@ -69,3 +69,8 @@ body {
   margin-bottom: 25px;
   cursor: pointer;
 }
+
+.techimage {
+  width: 150px;
+  height: 150px;
+}
