@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductsById } from '../api';
 import { useShoppingCart } from '../context/ShoppingCartContext';
+import { ShoppingCart } from 'phosphor-react';
+import { getProducts } from '../../../api';
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -9,7 +11,7 @@ const ProductDetails = () => {
     const { addToCart } = ShoppingCart();
 
     useEffect(() => {
-    setProduct(getProductById(Number(productId)));
+    setProduct(getProducts(Number(productId)));
 }, [productId]);
 
 if (!product) return <div>Loading...</div>;
