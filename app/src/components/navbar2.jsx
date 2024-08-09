@@ -10,7 +10,10 @@ export const Navbar2 = () => {
                 <div className="title3">
                     <Link to="/"> Newfoundland Electronics</Link>
                 </div>
-            </div>
+                <div className="title4">
+                    <a href="#top">Top of Page</a>
+                </div>
+            </div>  
         </div>
     );
 };
