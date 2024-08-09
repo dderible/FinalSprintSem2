@@ -1,8 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
+
 
 export const Shoppingcart = () => {
   return (
-    <div>cart</div>
+    <div>
+      <div className="shopcartbutton1">
+        <Link to = "/">Continue Shopping</Link>
+      </div>
+      <div className="shopcartbutton2">
+        <Link to = "/checkout">Checkout</Link>
+      </div>
+    </div>
   )
 }
 
