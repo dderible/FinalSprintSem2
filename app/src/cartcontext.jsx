@@ -1,24 +1,23 @@
-import { createContext, useState } from "react";
-import { getProducts } from './api.js';
+import React, { createContext, useState, useContext } from 'react';
 
-export const ShopContext = createContext(null);
+const ShoppingCartContext = createContext();
 
-const getDefaultCart = () => {
-    let cart = {};
-    for (let i = 1; i < getProducts.length + 1; i++) {
-        cart[i] = 0;
-    }
-    return cart;
+export const ShoppingCartProvider = ({ children }) => {
+    const [cartItems, setCartItems] = useState([]);
+
+    const addToCart = (product) => {
+        setCartItems((prevItems) => [...prevItems, product]);
+    };
+
+    const removeFromCart = (productId) => {
+        setCartItems((prevItems) => prevItems.filter(item => item.id !== productId));
+    };
+
+    return (
+        <ShoppingCartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+            {children}
+        </ShoppingCartContext.Provider>
+    );
 };
 
-export const ShopContextProvider = (props) => {
-    const [cartItems, setCartItems] = useState(getDefaultCart());
-
-    const addToCart = (productId) => {
-        setCartItems((prev) => ({...prev, [productId]: prev[productId] + 1}));
-    }
-
-    const contextValue = {
-        addToCart
-    };
-}
+export const useShoppingCart = () => useContext(ShoppingCartContext)

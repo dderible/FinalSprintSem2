@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getProductsById } from '../api';
-import { useShoppingCart } from '../context/ShoppingCartContext';
-import { ShoppingCart } from 'phosphor-react';
+import { getProductById } from '../../../api';
 import { getProducts } from '../../../api';
+import { ShopContext } from '../../../cartcontext';
+import { ShoppingCart } from 'phosphor-react';
 
 const ProductDetails = () => {
     const { productId } = useParams();
