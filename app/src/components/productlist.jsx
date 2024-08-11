@@ -7,6 +7,8 @@ import { useShoppingCart } from './cartcontext.jsx';
 function ProductList({
   
 }) {
+  const { addToCart, cartItemAmount } = useShoppingCart();
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => { const fetchedProducts = getProducts(); 
