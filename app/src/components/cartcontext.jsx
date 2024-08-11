@@ -1,8 +1,8 @@
 import React, { createContext, useState, useContext } from 'react';
 
-const ShoppingCartContext = createContext();
+const ShoppingCart = createContext();
 
-export const useShoppingCart = () => useContext(ShoppingCartContext);
+export const useShoppingCart = () => useContext(ShoppingCart);
 
 export const ShoppingCartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
@@ -16,9 +16,9 @@ export const ShoppingCartProvider = ({ children }) => {
     };
 
     return (
-        <ShoppingCartContext.Provider 
-            value={{ cartItems, addToCart, removeFromCart }}>
+        <ShoppingCart.Provider 
+            value={{ cartItems, addToCart, removeFromCart, setCartItems }}>
             {children}
-        </ShoppingCartContext.Provider>
+        </ShoppingCart.Provider>
     );
 };

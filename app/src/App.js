@@ -6,22 +6,25 @@ import Productdetails from './components/pages/shop/productdetails';
 import { Shoppingcart } from './components/pages/cart/shoppingcart';
 import { Checkout } from './components/pages/checkout/checkout';
 import ProductList from './components/productlist';
+import { ShoppingCartProvider } from './components/cartcontext';
 
 function App() {
   return (
     <div className = "App">
-      <Router>
-      <Navbar />
-        <Routes>
-          <Route path="/" element={<ProductList />} />
-          <Route path='/shop' element={<Productdetails />} />
-          <Route path="/cart" element={<Shoppingcart />} />
-          <Route path="/checkout" element={<Checkout />} />
-        </Routes>
-      <Navbar2 />
-      </Router>
+      <ShoppingCartProvider>
+        <Router>
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<ProductList />} />
+              <Route path='/shop' element={<Productdetails />} />
+              <Route path="/cart" element={<Shoppingcart />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          <Navbar2 />
+          </Router>
+        </ShoppingCartProvider>
     </div>
   );
 }
-
+ 
 export default App
