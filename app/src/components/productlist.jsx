@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { getProducts } from '../api.js';
-import { ShoppingCartProvider } from './cartcontext';
+import { useShoppingCart } from './cartcontext.jsx';
 
 function ProductList({
   
@@ -17,7 +17,7 @@ function ProductList({
         <ul>
           {products.map((product) => ( <li key={product.id} className="productbox"> <img src={product.image} className="techimage" alt='item' /> <p>{product.name}</p> <br /> <p>{product.price}</p> <br />
           <button className='cartbutton' onClick={() => addToCart(product.id)}>
-            Add To Cart {setCartItems > 0 && <> ({setCartItems})</>}
+            Add To Cart {cartItems > 0 && <> ({cartItems})</>}
           </button>
           </li>))}
         </ul>
