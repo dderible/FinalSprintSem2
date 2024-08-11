@@ -10,17 +10,18 @@ export const Navbar = () => {
                 <h1>Newfoundland Electronics</h1>
             </div>
 
-            <div className="shopbox">
-                <Link to="/"> Shop </Link>     
-            </div>
-
-            <div className="shopCart">
-                <Link to="/cart"> 
-                    <ShoppingCart size={32}/>
-                </Link>
-            </div>
+            <div className="links">
+                <div className="shopbox">
+                    <Link to="/"> Shop </Link>     
+                </div>
                 
+                <div>
+                    <Link to="/cart"> 
+                        <ShoppingCart size={32}/>
+                    </Link>
+                </div>
+                
+            </div>
         </div>
-
     );
 };
