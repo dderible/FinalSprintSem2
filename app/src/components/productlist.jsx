@@ -17,7 +17,7 @@ function ProductList({
         <ul>
           {products.map((product) => ( <li key={product.id} className="productbox"> <img src={product.image} className="techimage" alt='item' /> <p>{product.name}</p> <br /> <p>{product.price}</p> <br />
           <button className='cartbutton' onClick={() => addToCart(product.id)}>
-            Add To Cart {cartItems > 0 && <> ({cartItems})</>}
+            Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
           </button>
           </li>))}
         </ul>
