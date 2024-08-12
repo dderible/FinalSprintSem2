@@ -10,10 +10,12 @@ export const Checkout = () => {
           will Receive an email once your order has been shipped Thank you for
           chooseing Newfoundland Electronics
         </h2>
-      </div>
 
-      <div className="checkoutboxbutton">
-        <Link to="/">Back To Store</Link>
+        <div className="checkoutboxbutton">
+          <button>
+            <Link to="/">Back To Store</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

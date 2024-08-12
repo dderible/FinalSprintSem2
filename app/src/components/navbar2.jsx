@@ -5,14 +5,11 @@ import "../index.css";
 
 export const Navbar2 = () => {
   return (
-    <div className="navbar">
-      <div className="links">
-        <div className="title3">
-          <Link to="/"> Newfoundland Electronics</Link>
-        </div>
-        <div className="title4">
-          <a href="#top">Top of Page</a>
-        </div>
+    <div className="navbar2">
+      <div className="copyright">
+        <p>Copyright &#169; 2024 NL Electronics. All Rights Reserved</p>
+        <br />
+        <a href="#top">Top Of Page</a>
       </div>
     </div>
   );
