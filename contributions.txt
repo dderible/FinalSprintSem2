@@ -1,0 +1,16 @@
+FINAL SPRINT - SEMESTER 2
+
+Declan - Declan was the one responsible for handling the github repo, as
+well as the product list file and it's accompying api file. Also made the
+navbar file.
+
+Logan - Logan would be in charge of the product details file, and would
+work heavily on front and back end stuff, such as test files and CSS.
+
+Nicholas - Nicholas was in charge of the shopping cart page, and would
+also work heavily on front and back end stuff, like test files and CSS.
+Also made the navbar 2 file.
+
+Group Efforts - Together as a group, we would work out each other's
+problems, and create the cart context file that let the project all
+come together.
