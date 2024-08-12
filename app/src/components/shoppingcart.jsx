@@ -31,14 +31,18 @@ export const Shoppingcart = () => {
           ))
         )}
       </ul>
-      <div className="endbutton">
-        <section>
+      <div className="continueBtn">
+        <button>
           <Link to="/">Continue Shopping</Link>
-        </section>
+        </button>
       </div>
-      <div className="endbutton">
-        <Link to="/checkout">Checkout</Link>
+
+      <div className="checkoutBtn">
+        <button>
+          <Link to="/checkout">Checkout</Link>
+        </button>
       </div>
+
     </div>
   );
 };

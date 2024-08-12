@@ -2,7 +2,7 @@ const products = [
     {
       id: 1,
       name: '48" Full HD Flat Smart TV',
-      description: "Description of Product 1",
+      description: "48 inch smart TV that has so high of a resolution it will blow your mind",
       price: "$749",
       image: require("./pictures/smarttv.png"),
     },
@@ -10,7 +10,7 @@ const products = [
     {
       id: 2,
       name: "Acer Aspire 5 Laptop",
-      description: "Description of Product 2",
+      description: "Need a good laptop for school? we got it!",
       price: "$829",
       image: require("./pictures/acerlaptop.png"),
     },
@@ -18,7 +18,7 @@ const products = [
     {
       id: 3,
       name: "Beats Wireless Headphones",
-      description: "Description of Product 3",
+      description: "we love music too!, try these and tell us what you think",
       price: "$199",
       image: require("./pictures/beatsheadphones.png"),
     },
@@ -26,7 +26,7 @@ const products = [
     {
       id: 4,
       name: "Google Pixel 8 Pro",
-      description: "Description of Product 4",
+      description: "want features that apple products dont have, switch to google",
       price: "$1029",
       image: require("./pictures/phone.png"),
     },
@@ -34,7 +34,7 @@ const products = [
     {
       id: 5,
       name: "JBL Wireless Speaker",
-      description: "Description of Product 5",
+      description: "Nothing better then a good speaker by the pool",
       price: "$159",
       image: require("./pictures/jblspeaker.png"),
     },
@@ -42,7 +42,7 @@ const products = [
     {
       id: 6,
       name: "Samsung Galaxy Tab A9+",
-      description: "Description of Product 6",
+      description: "what child wouldn't like this",
       price: "$239",
       image: require("./pictures/tablet.png"),
     },
@@ -50,7 +50,7 @@ const products = [
     {
       id: 7,
       name: "Bose TV Soundbar Speaker",
-      description: "Description of Product 7",
+      description: "Imagine watching a StarWars marathon with this beast of a sound system",
       price: "$329",
       image: require("./pictures/soundbar.png"),
     },
@@ -58,7 +58,7 @@ const products = [
     {
       id: 8,
       name: 'LG 27" FHD Monitor',
-      description: "Description of Product 8",
+      description: "this monitor is the best for gaming, dont be fooled by the cheap price",
       price: "$139",
       image: require("./pictures/monitor.png"),
     },
@@ -66,7 +66,7 @@ const products = [
     {
       id: 9,
       name: "Logitech Wireless Keyboard",
-      description: "Description of Product 9",
+      description: "Working on the go? dont look further then this portable keyboard",
       price: "$149",
       image: require("./pictures/keyboard.png"),
     },
