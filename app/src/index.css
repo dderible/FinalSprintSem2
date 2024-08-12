@@ -1,6 +1,8 @@
 /*  General */
 
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap');
+
 
 body {
   background-color: white;
@@ -11,13 +13,22 @@ h1 {
   color: white;
   float: left;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 50px;
+  font-family: "Gupter", serif;
+}
+
+p {
+  color: white;
+}
+
+#top {
+  color: white;
 }
 
 /* Navbar CSS */
 
 .navbar {
-  height: 100px;
+  height: 150px;
   width: 100%;
   margin: auto;
   background-color: black;
@@ -29,7 +40,7 @@ h1 {
   margin-right: 50px;
   display: flex;
   align-items: center;
-  font-family: "Irish Grover", system-ui;
+  font-family: "Gupter", serif;
 }
 
 .links a {
@@ -45,6 +56,8 @@ h1 {
 
 .title4 {
   margin-top: 20px;
+  margin-left: 730px;
+  font-size: 18pt;
 }
 
 .shopbox {
@@ -59,10 +72,46 @@ h1 {
   margin-top: 15px;
 }
 
+.shopBtn button {
+  float: left;
+  width: 150px;
+  height: 75px;
+  border-radius: 20pt;
+  text-decoration: none;
+  background-color: gray;
+  margin-left: 1200px;
+  margin-top: 35px;
+  font-family: "Gupter", serif;
+}
+
+.shopBtn a {
+  text-decoration: none;
+  color: cornflowerblue;
+  font-weight: 600;
+  font-size: 25pt;
+  font-family: "Gupter", serif;
+}
+
+.shopCartLogo {
+  float: left;
+  width: 150px;
+  height: 75px;
+  background-color: gray;
+  border-radius: 5pt;
+  margin-left: 50px;
+  margin-top: 35px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.shopCartLogo a {
+  color: cornflowerblue;
+}
+
 /* Product List CSS */
 
 .productlist {
-  font-family: "Irish Grover", system-ui;
+  font-family: "Gupter", serif;
   color: black;
   display: grid;
 }
@@ -87,37 +136,50 @@ h1 {
 /* Shopping Cart CSS */
 
 .shopcartbutton1 {
-  width: 189px;
-  height: 51px;
+  float: left;
+  width: 200px;
+  height: 65px;
   border: solid black 2px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: black;
-  font-family: "Irish Grover", system-ui;
-  margin-top: 90px;
-  margin-left: 600px;
-}
-
-.shopcartbutton1 a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
+  font-family: "Gupter", serif;
+  font-size: 30pt;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-top: 400px;
+  text-align: center;
 }
 
 .shopcartbutton2 {
-  width: 189px;
-  height: 51px;
+  float: right;
+  width: 200px;
+  height: 65px;
   border: solid black 2px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: black;
-  font-family: "Irish Grover", system-ui;
-  margin-left: 850px;
-  margin-bottom: 50px;
+  font-family: "Gupter", serif;
+  font-size: 30pt;
+  font-weight: 500;
+  margin-right: 100px;
+  margin-top: 400px;
+  text-align: center;
 }
 
+.shopcartbutton1 a,
 .shopcartbutton2 a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
+}
+
+
+
+
+.cartBox {
+  height: 500px;
+  width: 700px;
+  background-color: grey;
+  margin-left: 700px;
 }
 
 /* Checkout CSS */
@@ -128,7 +190,7 @@ h1 {
   border: solid gray 2px;
   border-radius: 20px;
   background-color: gray;
-  font-family: "Irish Grover", system-ui;
+  font-family: "Gupter", serif;
   margin-top: 80px;
   margin-left: 500px;
   margin-bottom: 60px;

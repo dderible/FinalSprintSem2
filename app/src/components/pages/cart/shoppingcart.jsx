@@ -4,13 +4,14 @@ import {Link} from 'react-router-dom';
 
 export const Shoppingcart = () => {
   return (
-    <div>
+    <div className="cartBox">
       <div className="shopcartbutton1">
-        <Link to = "/">Continue Shopping</Link>
+        <Link to="/">Continue Shopping</Link>
       </div>
       <div className="shopcartbutton2">
-        <Link to = "/checkout">Checkout</Link>
+        <Link to="/checkout">Checkout</Link>
       </div>
+      
     </div>
   )
 }
