@@ -12,9 +12,10 @@ body {
 h1 {
   color: white;
   float: left;
-  margin-left: 50px;
+  margin-left: 125px;
   margin-top: 50px;
   font-family: "Gupter", serif;
+  font-size: 30pt;
 }
 
 p {
@@ -146,7 +147,7 @@ p {
   font-size: 30pt;
   font-weight: 500;
   margin-left: 100px;
-  margin-top: 400px;
+  margin-top: 575px;
   text-align: center;
 }
 
@@ -161,7 +162,7 @@ p {
   font-size: 30pt;
   font-weight: 500;
   margin-right: 100px;
-  margin-top: 400px;
+  margin-top: 575px;
   text-align: center;
 }
 
@@ -176,7 +177,7 @@ p {
 
 
 .cartBox {
-  height: 500px;
+  height: 675px;
   width: 700px;
   background-color: grey;
   margin-left: 700px;
@@ -217,24 +218,4 @@ p {
   margin-left: 350px;
   margin-top: 40px;
   padding-top: 30px;
-}
-
-.textalign1 {
-  margin-right: 700px;
-}
-
-.textalign2 {
-  margin-left: 10px;
-}
-
-.textalign3 {
-  margin-right: 757px;
-}
-
-.textalign4 {
-  margin-right: 85px;
-}
-
-.textspacing {
-  margin-top: 140px;
 }

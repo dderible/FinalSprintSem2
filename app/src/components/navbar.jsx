@@ -8,7 +8,7 @@ import '../index.css';
 export const Navbar = () => {
     return ( 
         <div className="navbar">
-
+            
             <div className="titlelogo">
                 <h1>Newfoundland Electronics</h1>
             </div>
